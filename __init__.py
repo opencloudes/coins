@@ -73,42 +73,7 @@ def values(service, logger):
     range_ = 'Coins!I2:I10'
     value_input_option = 'RAW'
     insert_data_option = ''
-    """try:
-        coins = getvalue()
-        value_range_body = {
-            "values": [
-               [coins[67][0]],
-               [coins[37][0]],
-               [coins[6][0]],
-               [coins[44][0]],
-               [coins[51][0]],
-               [coins[4][0]],
-               [coins[1][0]],
-               [coins[21][0]],
-               [coins[2][0]]
-            ]
-        }
-        request = service.spreadsheets().values().update(spreadsheetId=spreadsheetId, range=range_, valueInputOption=value_input_option, body=value_range_body)
-        response = request.execute()
-        logger.info('Datos de Litebit Almacenados Correctamente')
-        range_ = 'Coins!J2:J10'
-        value_range_body = {
-            "values": [
-               [coins[67][1]],
-               [coins[37][1]],
-               [coins[6][1]],
-               [coins[44][1]],
-               [coins[51][1]],
-               [coins[4][1]],
-               [coins[1][1]],
-               [coins[21][1]],
-               [coins[2][1]]
-            ]
-        }
-        request = service.spreadsheets().values().update(spreadsheetId=spreadsheetId, range=range_, valueInputOption=value_input_option, body=value_range_body)
-        response = request.execute()
-    except ValueError:
-            logger.info('Error recogiendo datos de LiteBit')"""
+
     changes = ['BTC-UBQ','BTC-XMY','BTC-DOGE','BTC-RDD','BTC-ABY','BTC-XRP','BTC-XLM','BTC-ADA','BTC-BTC','BTC-ETH','BTC-LTC']
     x = 1
     for i in range(len(changes)):
